@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: center;
+
+  width: 200px;
+  height: 400px;
+  /* margin-bottom: 20px; */
+}
+.name {
+  text-decoration-color: skyblue;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 3px;
+}
+.slogan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+  width: 800px;
+  height: 200px;
+
+  /* width: 50vw;
+  height: 20vh; */
+  border: 2px solid rgb(194, 188, 188, 0.5);
+  border-radius: 12px;
+  background-color: rgb(244, 221, 188);
+}
