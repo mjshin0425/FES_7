@@ -1,0 +1,23 @@
+body {
+  font-family: "Belanosima", sans-serif;
+  font-family: "Hi Melody", cursive;
+}
+
+h1 {
+  color: red;
+  boder: 2px solid #ddd;
+}
+strong {
+  border-bottom: 5px solid currentColor;
+}
+h2 {
+  font-size: 32px;
+}
+
+p {
+  text-overflow: ;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
