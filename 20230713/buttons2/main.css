@@ -1,0 +1,11 @@
+button {
+  width: 88px;
+  height: 32px;
+  padding: 9px 25px;
+}
+
+.btn_default {
+  border: 1px solid #1a202c;
+  background-color: #343f50;
+  box-shadow: 2px 2px 0px 0px rgba(255, 255, 255, 0.1) inset;
+}

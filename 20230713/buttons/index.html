@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>buttons</title>
+    <style>
+      button {
+        width: 88px;
+        height: 32px;
+        top: 8px;
+        left: 76px;
+        font-size: 12px;
+        line-height: 14.4px;
+        text-decoration: underline;
+        color: rgba(255, 255, 255, 1);
+        border: inset 1.5px 1.5px 0px 0px rgba(74, 85, 104, 1);
+      }
+      button:hover {
+      }
+
+      .btn_default {
+        width: 88px;
+        height: 32px;
+        top: 8px;
+        left: 76px;
+        font-size: 12px;
+        line-height: 14.4px;
+        color: rgba(255, 255, 255, 1);
+        border: inset 1.5px 1.5px 0px 0px rgba(74, 85, 104, 1);
+      }
+      .btn_hover:hover {
+        border-radius: 1px solid purple;
+      }
+      .btn {
+        background-color: rgba(45, 56, 72, 1);
+      }
+
+      .yes {
+        background-color: rgba(67, 154, 255, 1);
+        border: inset 1.5px 1.5px 0px 0px rgba(115, 180, 255, 1);
+      }
+      .del {
+        background-color: rgba(235, 87, 87, 1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="btn_defalt">
+      <button class="btn" type="button">Button</button>
+      <button class="yes" type="button">Yes</button>
+      <button class="del" type="button">Del</button>
+    </div>
+    <div class="btn_hover">
+      <button class="btn" type="button">Button</button>
+      <button class="yes" type="button">Yes</button>
+      <button class="del" type="button">Del</button>
+    </div>
+
+    <div class="btn_active">
+      <button class="btn" type="button">Button</button>
+      <button class="yes" type="button">Yes</button>
+      <button class="del" type="button">Del</button>
+    </div>
+    <div class="btn_disavled">
+      <button class="btn" type="button">Button</button>
+      <button class="yes" type="button">Yes</button>
+      <button class="del" type="button">Del</button>
+    </div>
+  </body>
+</html>
