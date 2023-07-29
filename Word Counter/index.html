@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자소서 글자수 계산기</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <style>
+      h1 {
+        margin-top: 30px;
+      }
+      #count {
+        float: right;
+      }
+    </style>
+  </head>
+  <body class="container">
+    <h1>자기소개</h1>
+
+    <!-- /*이벤트 핸들링*/ -->
+    <textarea
+      class="form-control"
+      rows="3"
+      id="jasoseol"
+      onkeydown="counter();"
+    >
+
+안녕하세요.</textarea
+    >
+
+    <span id="count">(0/200)</span>
+    <script>
+      function counter() {
+        //counter함수를 이용해 글자수를 세어줌
+        var content = document.getElementById("jasoseol").value; //특정 id 'jasoseol'을 가진 html에 접근해서 값 value를 가져옴
+        if (content.length > 500) {
+          content = content.substring(0, 500); //content = 문자열에서 0이상 500미만까지 자른것
+          document.getElementById("jasoseol").value = content; //content는 id =jasoseol 의 값이다
+        }
+        document.getElementById("count").innerHTML =
+          "(" + content.length + "/500)"; //id=count의 값(.innerHTML=.value=content의 길이)을 넣는다. DOM을 이용해 id에 값을 넣어줌.
+      }
+      counter();
+    </script>
+  </body>
+</html>
