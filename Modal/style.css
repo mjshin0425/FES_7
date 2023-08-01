@@ -1,0 +1,64 @@
+/* reset */
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+/* reset */
+body {
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  background-color: orange;
+  border-bottom: 1px solid gray;
+}
+.Id_pw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blue_login {
+  background-color: antiquewhite;
+  border: 1px solid gray;
+}
+
+.signin_find {
+  background-color: blueviolet;
+  display: flex;
+}
+
+.sns {
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+}
+.google_login {
+  background-color: lightpink;
+}
+
+.facebook_login {
+  background-color: lightseagreen;
+}
+
+.naver_login {
+  background-color: yellowgreen;
+}
+
+.cacao_login {
+  background-color: yellow;
+}
