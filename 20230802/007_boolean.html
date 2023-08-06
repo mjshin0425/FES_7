@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>boolean</title>
+  </head>
+  <body>
+    <script>
+      // 1번 연습문제
+      console.log(true && false); //false
+      console.log(false && true); //false
+      console.log(false || true); //true  .or 둘 중 하나만 t , t
+      console.log(true || true); //true
+
+      // 2번 연습문제
+      console.log(!!"가"); //true
+      console.log(!""); //true
+
+      // 3번 연습문제(단록 회로 평가)
+      console.log("가" && "나"); //true  // 출력은 '나', '나'는 true로 평가
+      console.log(0 && -1); // 앞, 0
+      console.log(0 && 1); // 앞,  0
+      console.log(1 && 1); // 뒤, 1
+      console.log(1 && "안녕"); // 뒤, '안녕'
+      console.log(1 && true); // 뒤, true
+      console.log(0 || true); // 0 or 뒤에 따라 출력, true
+    </script>
+  </body>
+</html>
