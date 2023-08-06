@@ -1,0 +1,76 @@
+/* reset */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: skyblue;
+}
+
+body a {
+  text-decoration: none;
+}
+
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  width: 520px;
+  height: 712px;
+  border-radius: 10px;
+  background-color: lightsalmon;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.google_login {
+  width: 472px;
+  height: 50px;
+  border: 1px solid #767676;
+  border-radius: 5px;
+  background-color: goldenrod;
+  text-align: center;
+  display: flex;
+}
+
+.facebook_login {
+  width: 472px;
+  height: 50px;
+  border: 1px solid #767676;
+  border-radius: 5px;
+  background-color: goldenrod;
+}
+
+.naver_login {
+  width: 472px;
+  height: 50px;
+  border: 1px solid #767676;
+  border-radius: 5px;
+  background-color: goldenrod;
+}
+
+.cacao_login {
+  width: 472px;
+  height: 50px;
+  border: 1px solid #767676;
+  border-radius: 5px;
+  background-color: goldenrod;
+}
