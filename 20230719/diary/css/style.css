@@ -1,0 +1,130 @@
+h1 {
+  margin: initial;
+}
+
+h1 {
+  .a11y-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+  }
+}
+
+header {
+  width: 1440px;
+  height: 120px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.logo {
+  width: 156px;
+  height: 75px;
+  flex-shrink: 0;
+}
+
+main {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+
+  /* width: 1440px;
+  height: 1024px; */
+  background: var(--bg-dot, #fffaf0);
+}
+
+main p {
+  text-align: center;
+  font-size: 24px;
+}
+
+.logo {
+  width: 156px;
+  height: 75px;
+}
+
+.login_btn {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+  width: 103px;
+  height: 40px;
+}
+
+form {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  gap: 24px;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.email input {
+  width: 392px;
+  height: 48px;
+  border-radius: 4px 4px 0px 0px;
+  border-bottom: 1px solid var(--text-3, #677880);
+}
+
+.password {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.password input {
+  width: 392px;
+  height: 48px;
+  border-radius: 4px 4px 0px 0px;
+  border-bottom: 1px solid var(--text-3, #677880);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.text input {
+  width: 392px;
+  height: 48px;
+  border-radius: 4px 4px 0px 0px;
+  border-bottom: 1px solid var(--text-3, #677880);
+}
+
+form button {
+  border-radius: 4px;
+  background: var(--text-1, #29363d);
+  width: 392px;
+  height: 48px;
+  color: #fff;
+}
+
+main p {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 68px;
+}
