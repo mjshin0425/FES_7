@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: antiquewhite;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  background-color: skyblue;
+
+  /* 기준 */
+  position: relative;
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  transform: perspective(200px) scale(0.5);
+}
+
+.front,
+.back {
+  width: 200px;
+  height: 200px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+
+  backface-visibility: hidden;
+}
+
+.front {
+  background-color: yellow;
+}
+
+.back {
+  background-color: yellowgreen;
+
+  transform: rotateX(180deg);
+}
+
+/*  hover */
+.wrap:hover .card {
+    
+}
