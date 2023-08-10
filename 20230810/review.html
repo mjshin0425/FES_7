@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //splice(넣을 인덱스, 지울 인덱스, 넣을 요소 값)
+      const avengers = ["spiderman", "ironman", "hulk", "thor"];
+      avengers.splice(2, 0, "blackwidow");
+
+      //slice(0,4) 인덱스 0부터 4-1까지의 요소 값을 복사해서 새로운 배열을 반환
+      const avengers = ["spiderman", "ironman", "hulk", "thor"];
+      avengers.slice(0, 3);
+
+      //sort() 유니코드 저장된 방식으로 정렬
+      const arr = ["나", "가", "사", "바"];
+      arr.sort();
+
+      arr.sort(function (a, b) {
+        //return a - b;
+        if (a < b) {
+          return -1;
+        }
+      });
+
+      const avengers = ["spiderman", "ironman", "hulk", "thor"];
+      arr.sort(function (a, b) {
+        //return a - b;
+        if (a < b) {
+          return -1;
+        }
+      });
+    </script>
+  </body>
+</html>
