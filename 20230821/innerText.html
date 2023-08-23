@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>innertext</title>
+  </head>
+  <body>
+    <h3>원본 요소:</h3>
+    <p id="source">
+      <style>
+        #source {
+          color: red;
+        }
+      </style>
+      아래에서<br />이 글을<br />어떻게 인식하는지 살펴보세요.
+      <span style="display: none">숨겨진 글</span>
+
+      <figure>
+        <img src="" alt="청바지 삼종세트" />
+        <figcaption>
+          상품 가격 : 29,900원
+          <span class="hidden">VIP회원이라면 29,900d원!</span>
+        </figcaption>
+      </figure>
+    </p>
+    <!-- textContent  텍스트 데이터만 보여줌 -->
+    <h3>textContent 결과:</h3>
+    <textarea id="textContentOutput" rows="6" cols="30" readonly>...</textarea>
+    <!-- innerText는 HTML을 인식하고 일부 스타일(숨김)이 적용됨. 비추 -->
+    <h3>innerText 결과:</h3>
+    <textarea id="innerTextOutput" rows="6" cols="30" readonly>...</textarea>
+  </body>
+</html>
