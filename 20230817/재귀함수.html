@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>재귀함수</title>
+  </head>
+  <body>
+    <script>
+      //fucntion fac(n) {
+      //    if(n <= 1) {
+      //        return 0
+      //    }
+      //    return n + fac(n-1);
+      //}
+      //fac(5);
+
+      function addElements(arr) {
+        if (arr.length === 0) {
+          return 0;
+        }
+        return arr[0] + addElements(arr.slice(1));
+      }
+
+      console.log(addElements([1, 2, 3, 4]));
+      // 1 + addElements([2,3,4])
+    </script>
+  </body>
+</html>
